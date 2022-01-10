@@ -36,4 +36,4 @@ git add . && git commit -m "terminal" && git push heroku main && git push origin
 ### autor
 
 > lishugupta652
-> [site](https://www.gitman.ml)
+> [site](https://www.lishu.ml)
