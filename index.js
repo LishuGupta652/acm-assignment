@@ -21,10 +21,6 @@ mongoose.connect(process.env.MONGODB_URI, () => {
 
 // Importing the routes
 const postRoutes = require("./routes/postRoutes");
-const dataRoutes = require("./routes/dataRoutes");
-const nftRoutes = require("./routes/nftRoutes");
-const shortUrlRoutes = require("./routes/shortUrlRoutes");
-const techwondoeRoutes = require("./routes/techwondoeRoutes");
 // Using middleware for parsing the body of the request
 app.use(cors());
 app.use(express.json());
@@ -32,10 +28,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // Using the routes as middlesware
 app.use("/api/posts", postRoutes);
-app.use("/api/blog/", dataRoutes);
-app.use("/api/nft/", nftRoutes);
-app.use("/s", shortUrlRoutes);
-app.use("/api/techwondoe/", techwondoeRoutes);
 
 // using main routes
 app.get("/", (req, res) => {
